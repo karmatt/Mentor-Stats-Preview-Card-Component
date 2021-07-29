@@ -3,31 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <main class="stat-card">
+      <section class="stat-card__image-container">
+        <img src="./images/image-header-mobile.jpg" alt="" sizes="100%" srcset="./images/image-header-desktop.jpg 540w, ./images/image-header-mobile.jpg 654w" class="stat-card__image" aria-hidden="true">
+      </section>
+      <div class="stat-card__text-container">
+        <section class="stat-card__text">
+          <h1 class="stat-card__heading">Get <span class="stat-card__heading--purple">insights</span> that help your business grow.</h1>
+          <p class="stat-card__info">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+            experience, and overall efficiency.</p>
+        </section>
+        <section class="stat-card__stats">
+          <ul class="stat-card__list">
+            <li class="stat-card__list-item">
+              <p class="stat-card__stat-number">10k+</p>
+              <p class="stat-card__stat-label uppercase">companies</p>
+            </li>
+            <li class="stat-card__list-item">
+              <p class="stat-card__stat-number">314</p>
+              <p class="stat-card__stat-label uppercase">templates</p>
+            </li>
+            <li class="stat-card__list-item">
+              <p class="stat-card__stat-number">12m+</p>
+              <p class="stat-card__stat-label uppercase">queries</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="container__footer">
+      <p class="attribution">
+        Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a class="attribution__link" href="#">Karl Matthews</a>.
+      </p>
+    </footer>
   </div>
 </body>
 </html>
