@@ -14,7 +14,10 @@
   <div class="container">
     <main class="stat-card">
       <section class="stat-card__image-container">
-        <img src="./images/image-header-mobile.jpg" alt="" sizes="100%" srcset="./images/image-header-desktop.jpg 540w, ./images/image-header-mobile.jpg 654w" class="stat-card__image" aria-hidden="true">
+        <picture class="stat-card__image">
+          <source media="(min-width: 769px)" srcset="./images/image-header-desktop.jpg">
+          <img src="./images/image-header-mobile.jpg" alt="" aria-hidden="true">
+        </picture>
       </section>
       <div class="stat-card__text-container">
         <section class="stat-card__text">

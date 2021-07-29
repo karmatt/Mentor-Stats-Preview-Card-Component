@@ -18,7 +18,7 @@ body {
     background-color: var(--very-dark-blue);
 }
 img {
-    display:block;
+    display: block;
     height: 100%;
     width: 100%;
 }
@@ -117,18 +117,23 @@ img {
 }
 @media screen and (min-width: 769px) {
     .container {
-        max-width: 1300px;
-        min-height: 100vh;
+        max-width: 1030px;
     }
     .stat-card {
         flex-direction: row-reverse;
-        justify-content: space-evenly;
     }
     .stat-card__text-container {
+        align-items: flex-start;
         margin: 0 2.5rem;
+    }
+    .stat-card__text {
+        text-align: start;
     }
     .stat-card__list {
         flex-direction: row;
         padding: 0 1rem;
+    }
+    .stat-card__list-item {
+        align-items: flex-start;
     }
 }
