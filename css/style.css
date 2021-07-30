@@ -110,18 +110,27 @@ img {
 }
 .attribution__link { 
     color: hsl(228, 45%, 44%);
+    cursor: pointer;
     text-decoration: none;
 }
 .uppercase {
     text-transform: uppercase;
 }
 @media screen and (min-width: 769px) {
+    body {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
     .container {
         max-width: 1030px;
     }
     .stat-card {
         flex-direction: row-reverse;
     }
+    
     .stat-card__text-container {
         align-items: flex-start;
         margin: 0 2.5rem;
